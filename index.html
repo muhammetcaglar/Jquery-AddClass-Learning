@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+      p {
+    margin: 8px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .selected {
+    color: blue;
+  }
+  .highlight {
+    background: yellow;
+  }
+  .firstly{
+    font-size: x-large;
+    background: black;
+    color: white;
+  }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+    <p>Hello</p>
+    <p id="mid">and</p>
+    <p>GoodBye</p>
+
+    <script>
+        $( "p" ).last().addClass( "selected" );
+        $("#mid").addClass("highlight");
+        $("p").first().addClass("firstly");
+    </script>
+</body>
+
+</html>
